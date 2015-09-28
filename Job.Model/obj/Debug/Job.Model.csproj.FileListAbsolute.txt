@@ -1,0 +1,5 @@
+E:\Lee\Demo\LookingJob\Job.Model\bin\Debug\Job.Model.dll
+E:\Lee\Demo\LookingJob\Job.Model\bin\Debug\Job.Model.pdb
+E:\Lee\Demo\LookingJob\Job.Model\obj\Debug\Job.Model.dll
+E:\Lee\Demo\LookingJob\Job.Model\obj\Debug\Job.Model.pdb
+E:\Lee\Demo\LookingJob\Job.Model\obj\Debug\Job.Model.csprojResolveAssemblyReference.cache

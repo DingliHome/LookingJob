@@ -1,0 +1,12 @@
+E:\Lee\Demo\LookingJob\Job.DAL\obj\Debug\Job.DAL.csprojResolveAssemblyReference.cache
+E:\Lee\Demo\LookingJob\Job.DAL\bin\Debug\Job.DAL.dll.config
+E:\Lee\Demo\LookingJob\Job.DAL\bin\Debug\Job.DAL.dll
+E:\Lee\Demo\LookingJob\Job.DAL\bin\Debug\Job.DAL.pdb
+E:\Lee\Demo\LookingJob\Job.DAL\bin\Debug\EntityFramework.dll
+E:\Lee\Demo\LookingJob\Job.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Lee\Demo\LookingJob\Job.DAL\bin\Debug\Job.Model.dll
+E:\Lee\Demo\LookingJob\Job.DAL\bin\Debug\Job.Model.pdb
+E:\Lee\Demo\LookingJob\Job.DAL\bin\Debug\EntityFramework.xml
+E:\Lee\Demo\LookingJob\Job.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\Lee\Demo\LookingJob\Job.DAL\obj\Debug\Job.DAL.dll
+E:\Lee\Demo\LookingJob\Job.DAL\obj\Debug\Job.DAL.pdb

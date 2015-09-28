@@ -1,0 +1,12 @@
+E:\Lee\Demo\LookingJob\Job.Test\bin\Debug\Job.Test.exe.config
+E:\Lee\Demo\LookingJob\Job.Test\obj\Debug\Job.Test.csprojResolveAssemblyReference.cache
+E:\Lee\Demo\LookingJob\Job.Test\bin\Debug\Job.Test.exe
+E:\Lee\Demo\LookingJob\Job.Test\bin\Debug\Job.Test.pdb
+E:\Lee\Demo\LookingJob\Job.Test\bin\Debug\Job.Crawler.dll
+E:\Lee\Demo\LookingJob\Job.Test\bin\Debug\Job.Model.dll
+E:\Lee\Demo\LookingJob\Job.Test\bin\Debug\AngleSharp.dll
+E:\Lee\Demo\LookingJob\Job.Test\bin\Debug\Job.Crawler.pdb
+E:\Lee\Demo\LookingJob\Job.Test\bin\Debug\Job.Model.pdb
+E:\Lee\Demo\LookingJob\Job.Test\bin\Debug\AngleSharp.xml
+E:\Lee\Demo\LookingJob\Job.Test\obj\Debug\Job.Test.exe
+E:\Lee\Demo\LookingJob\Job.Test\obj\Debug\Job.Test.pdb

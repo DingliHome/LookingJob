@@ -1,0 +1,14 @@
+E:\Lee\Demo\LookingJob\Job.Crawler\bin\Debug\Job.Crawler.dll
+E:\Lee\Demo\LookingJob\Job.Crawler\bin\Debug\Job.Crawler.pdb
+E:\Lee\Demo\LookingJob\Job.Crawler\bin\Debug\AngleSharp.dll
+E:\Lee\Demo\LookingJob\Job.Crawler\bin\Debug\Job.Model.dll
+E:\Lee\Demo\LookingJob\Job.Crawler\bin\Debug\Newtonsoft.Json.dll
+E:\Lee\Demo\LookingJob\Job.Crawler\bin\Debug\Job.Model.pdb
+E:\Lee\Demo\LookingJob\Job.Crawler\bin\Debug\AngleSharp.xml
+E:\Lee\Demo\LookingJob\Job.Crawler\bin\Debug\Newtonsoft.Json.xml
+E:\Lee\Demo\LookingJob\Job.Crawler\obj\Debug\Job.Crawler.csprojResolveAssemblyReference.cache
+E:\Lee\Demo\LookingJob\Job.Crawler\obj\Debug\Job.Crawler.dll
+E:\Lee\Demo\LookingJob\Job.Crawler\obj\Debug\Job.Crawler.pdb
+E:\Lee\Demo\LookingJob\Job.Crawler\bin\Debug\HtmlAgilityPack.dll
+E:\Lee\Demo\LookingJob\Job.Crawler\bin\Debug\HtmlAgilityPack.pdb
+E:\Lee\Demo\LookingJob\Job.Crawler\bin\Debug\HtmlAgilityPack.xml
