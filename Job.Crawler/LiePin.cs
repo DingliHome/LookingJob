@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Text;
 using AngleSharp.Parser.Html;
 using Job.Model.Entities;
 
@@ -14,6 +15,7 @@ namespace Job.Crawler
         public LiePin()
         {
             _cityDic.Add("无锡", "060100");
+            AEncoding = Encoding.UTF8;
         }
         public List<JobInfo> CrawlerJob(string city, string kw, string pagenum)
         {

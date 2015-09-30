@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Text;
 using System.Web;
 using AngleSharp.Parser.Html;
 using HtmlAgilityPack;
@@ -12,6 +13,11 @@ namespace Job.Crawler
     {
         private string SouUrl = "http://sou.zhaopin.com/jobs/searchresult.ashx?jl={0}&kw={1}&p={2}&isadv=0";
         private HtmlParser parser = new HtmlParser();
+
+        public ZhaoPin()
+        {
+            AEncoding = Encoding.UTF8;
+        }
         public List<JobInfo> CrawlerJob(string city, string kw, string pagenum)
         {
             var jobInfos = new List<JobInfo>();
