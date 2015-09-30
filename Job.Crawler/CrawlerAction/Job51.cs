@@ -1,12 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Web;
 using AngleSharp.Dom;
 using AngleSharp.Parser.Html;
 using Job.Model.Entities;
 
-namespace Job.Crawler
+namespace Job.Crawler.CrawlerAction
 {
     public class Job51 : JobBase, ICrawler
     {

@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Collections.Generic;
 using System.Text;
 using System.Web;
 using AngleSharp.Parser.Html;
-using HtmlAgilityPack;
 using Job.Model.Entities;
 
-namespace Job.Crawler
+namespace Job.Crawler.CrawlerAction
 {
     public class ZhaoPin : JobBase, ICrawler
     {

@@ -13,7 +13,7 @@ namespace Job.Service
     public interface IJobService
     {
         [OperationContract]
-        JobInfo CrawlerJob(string jobplatform,string city, string kw, string pagenum);
+        List<JobInfo> CrawlerJob(string jobplatform, string city, string kw, string pagenum);
 
     }
 }

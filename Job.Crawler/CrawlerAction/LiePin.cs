@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Collections.Generic;
 using System.Text;
 using AngleSharp.Parser.Html;
 using Job.Model.Entities;
 
-namespace Job.Crawler
+namespace Job.Crawler.CrawlerAction
 {
     public class LiePin : JobBase, ICrawler
     {

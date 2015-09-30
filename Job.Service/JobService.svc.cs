@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using Job.Crawler;
+using Job.Crawler.CrawlerAction;
 using Job.Model.Entities;
 
 namespace Job.Service
@@ -11,9 +13,9 @@ namespace Job.Service
         {
 
         }
-        public JobInfo CrawlerJob(string jobplatform, string city, string kw, string pagenum)
+        public List<JobInfo> CrawlerJob(string jobplatform, string city, string kw, string pagenum)
         {
-            JobInfo jobInfo = null;
+            List<JobInfo> jobInfo = new List<JobInfo>();
             switch (jobplatform)
             {
                 case "ZhaoPin":

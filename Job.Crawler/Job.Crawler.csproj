@@ -56,12 +56,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrawlerAction\LaGou.cs" />
     <Compile Include="ICrawler.cs" />
-    <Compile Include="Job51.cs" />
-    <Compile Include="JobBase.cs" />
-    <Compile Include="LiePin.cs" />
-    <Compile Include="ZhaoPin.cs" />
+    <Compile Include="CrawlerAction\Job51.cs" />
+    <Compile Include="CrawlerAction\JobBase.cs" />
+    <Compile Include="CrawlerAction\LiePin.cs" />
+    <Compile Include="CrawlerAction\ZhaoPin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponseJsonData\LaGouJobs.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Job.Model\Job.Model.csproj">
