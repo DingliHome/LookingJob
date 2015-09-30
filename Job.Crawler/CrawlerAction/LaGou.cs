@@ -29,7 +29,7 @@ namespace Job.Crawler.CrawlerAction
             var jobInfos = new List<JobInfo>();
             try
             {
-                string url = string.Format(Url, HttpUtility.UrlEncode(city),HttpUtility.UrlEncode("全职"));
+                string url = string.Format(Url, HttpUtility.UrlEncode(city), HttpUtility.UrlEncode("全职"));
                 var postdata = string.Format("first={0}&pn={1}&kd={2}", false, pagenum, HttpUtility.UrlEncode(kw));//pn 第几页
                 string resultjson = PostHtml(url, postdata);
                 var laGouJobs = JsonConvert.DeserializeObject<LaGouJobs>(resultjson);
@@ -43,16 +43,16 @@ namespace Job.Crawler.CrawlerAction
                         jobInfo.JobTitle = item.PositionName;
                         jobInfo.JobCompany = item.CompanyShortName;
                         jobInfo.JobSalary = item.Salary;
-                        jobInfo.JobWelfare =item.PositionAdvantage+ string.Join(",",item.CompanyLabelList);
+                        jobInfo.JobWelfare = item.PositionAdvantage + string.Join(",", item.CompanyLabelList);
                         jobInfo.PublishDate = item.CreateTime;
-                        jobInfo.CompanyType = item.IndustryField;
-                        jobInfo.JobBaseInfo = string.Format("经验{0},{1}以上,{2}", item.WorkYear,item.Education,item.JobNature);
+                        jobInfo.CompanyType = item.IndustryField + "," + item.FinanceStage;
+                        jobInfo.JobBaseInfo = string.Format("经验{0},{1}以上,{2}", item.WorkYear, item.Education, item.JobNature);
                         string detailhtml = GetHtml(jobInfo.JobLink);
                         if (!string.IsNullOrEmpty(detailhtml))
                         {
                             IHtmlDocument document = _parser.Parse(detailhtml);
                             IElement element = document.QuerySelector("dl.job_detail").QuerySelector("dd.job_bt");
-                            if (element!=null)
+                            if (element != null)
                             {
                                 jobInfo.JobDetail = element.InnerHtml;
                             }
