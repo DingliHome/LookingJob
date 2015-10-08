@@ -12,17 +12,11 @@ namespace Job.DAL.IRepositories
         IQueryable<T> GetAll();
         IQueryable<T> ReadAll();
         IQueryable<T> FindBy(Expression<Func<T, bool>> predicate);
+        T GetById(long id);
         void Add(T entity);
+        void AddRange(List<T> entities);
         void Delete(T entity);
-        void Edit(T entity);
-        void Save();
-
-        Task<T> GetByIdAsync(int id);
-
-        Task AddAsync(T entity);
-
-        Task EditAsync(T entity);
-
-        Task DeleteAsync(T entity);
+        void Update(T entity);
+        Task<List<T>> GetAllAsync();
     }
 }

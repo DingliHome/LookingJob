@@ -12,7 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Job.Crawler.CrawlerAction;
+using Job.DAL;
 using Job.DAL.Repositories;
+using Job.DAL.UnitOfWork;
 using Job.Model.Entities;
 
 namespace Job.Client
@@ -26,20 +29,22 @@ namespace Job.Client
         {
             InitializeComponent();
 
-            var jobInfoRepository = new JobInfoRepository();
-            jobInfoRepository.Add(new JobInfo() { JobTitle = "test", CompanyType = "123", JobSalary = "8888", JobAddress = "ddddd" });
-            doTask(jobInfoRepository);
+            //var job51 = new Job51();
+            //var liePin = new LiePin();
+            //var zhaoPin = new ZhaoPin();
+            //var laGou = new LaGou();
+            //List<JobInfo> crawlerJob = job51.CrawlerJob("无锡", ".net", "1");
+            //List<JobInfo> jobInfos = liePin.CrawlerJob("无锡", ".net", "1");
+            //List<JobInfo> infos = zhaoPin.CrawlerJob("无锡", ".net", "1");
+            //List<JobInfo> list = laGou.CrawlerJob("无锡", ".net", "1");
+            //var unitOfWork = new UnitOfWork<DbContextBase>();
+            //unitOfWork.JobInfoRepository.AddRange(crawlerJob);
+            //unitOfWork.JobInfoRepository.AddRange(jobInfos);
+            //unitOfWork.JobInfoRepository.AddRange(infos);
+            //unitOfWork.JobInfoRepository.AddRange(list);
+            //unitOfWork.Commit();
         }
 
-        private async Task doTask(JobInfoRepository jobInfoRepository)
-        {
-            await jobInfoRepository.AddAsync(new JobInfo()
-            {
-                JobTitle = "test2",
-                CompanyType = "123",
-                JobSalary = "8888",
-                JobAddress = "ddddd"
-            });
-        }
+
     }
 }

@@ -10,3 +10,8 @@ E:\Lee\Demo\LookingJob\Job.Test\bin\Debug\Job.Model.pdb
 E:\Lee\Demo\LookingJob\Job.Test\bin\Debug\AngleSharp.xml
 E:\Lee\Demo\LookingJob\Job.Test\obj\Debug\Job.Test.exe
 E:\Lee\Demo\LookingJob\Job.Test\obj\Debug\Job.Test.pdb
+E:\Lee\Demo\LookingJob\Job.Test\bin\Debug\Log4Help.dll
+E:\Lee\Demo\LookingJob\Job.Test\bin\Debug\log4net.dll
+E:\Lee\Demo\LookingJob\Job.Test\bin\Debug\log4net.xml
+E:\Lee\Demo\LookingJob\Job.Test\bin\Debug\Newtonsoft.Json.dll
+E:\Lee\Demo\LookingJob\Job.Test\bin\Debug\Newtonsoft.Json.xml

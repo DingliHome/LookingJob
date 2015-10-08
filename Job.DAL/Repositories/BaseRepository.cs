@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Migrations;
 using System.Linq;
@@ -10,73 +11,62 @@ namespace Job.DAL.Repositories
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
-        protected readonly DbContextBase _dbContext = new DbContextBase();
-        protected DbSet<T> DbSet;
-        public BaseRepository()
+        protected readonly DbContext _dbContext;
+        
+        public BaseRepository(DbContext dbContext)
         {
-            DbSet = _dbContext.Set<T>();
+            _dbContext = dbContext;
         }
+
+        private DbSet<T> Dbset
+        {
+            get { return _dbContext.Set<T>(); }
+        } 
         public IQueryable<T> GetAll()
         {
-            return DbSet;
+            return Dbset;
         }
 
         public IQueryable<T> ReadAll()
         {
-            return DbSet.AsNoTracking();
+            return Dbset.AsNoTracking();
         }
 
         public IQueryable<T> FindBy(Expression<Func<T, bool>> predicate)
         {
-            return DbSet.Where(predicate);
+            return Dbset.Where(predicate);
+        }
+
+        public T GetById(long id)
+        {
+            T find = Dbset.Find(id);
+            return find;
         }
 
         public void Add(T entity)
         {
-            DbSet.Add(entity);
-            _dbContext.SaveChanges();
+            Dbset.Add(entity);
+        }
+
+        public void AddRange(List<T> entities)
+        {
+            _dbContext.Set<T>().AddRange(entities);
         }
 
         public void Delete(T entity)
         {
-            DbSet.Attach(entity);
-            DbSet.Remove(entity);
-            _dbContext.SaveChanges();
+            Dbset.Remove(entity);
         }
 
-        public void Edit(T entity)
+        public void Update(T entity)
         {
+            Dbset.Attach(entity);
             _dbContext.Entry(entity).State = EntityState.Modified;
-            _dbContext.SaveChanges();
         }
 
-        public void Save()
+        public async Task<List<T>> GetAllAsync()
         {
-            _dbContext.SaveChanges();
-        }
-
-        public async Task<T> GetByIdAsync(int id)
-        {
-            return await DbSet.FindAsync(id);
-        }
-
-        public async Task AddAsync(T entity)
-        {
-            DbSet.Add(entity);
-            await _dbContext.SaveChangesAsync();
-        }
-
-        public async Task EditAsync(T entity)
-        {
-            _dbContext.Entry(entity).State = EntityState.Modified;
-            await _dbContext.SaveChangesAsync();
-        }
-
-        public async Task DeleteAsync(T entity)
-        {
-            DbSet.Attach(entity);
-            DbSet.Remove(entity);
-            await _dbContext.SaveChangesAsync();
+            return await Dbset.ToListAsync();
         }
     }
 }

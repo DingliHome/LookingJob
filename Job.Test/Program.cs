@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using Job.Crawler;
+using Job.Crawler.CrawlerAction;
 
 namespace Job.Test
 {
